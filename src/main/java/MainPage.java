@@ -3,26 +3,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class MainPage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    private By logInButton = By.xpath("//div[@class='auth-bar__item auth-bar__item--text']");
-    private By headingLogIn = By.xpath("//div[@class='auth-form__title auth-form__title_big auth-form__title_condensed-default']");
-    private By cartButton = By.xpath("//a[@title='Корзина']");
-    private By logInButtonGreen = By.xpath("//button[@class='auth-button auth-button_primary auth-button_middle auth-form__button auth-form__button_width_full']");
-    private By usernameField = By.xpath("//input[@placeholder='Ник или e-mail']");
-    private By passwordField = By.xpath("//input[@placeholder='Пароль']");
-    private By errorUsername = By.xpath("//div[contains(text(),'Укажите ник')]");
-    private By errorPassword = By.xpath("//div[contains(text(),'Укажите пароль')]");
-    private By errorWrongCreds = By.xpath("//div[contains(text(),'Неверный логин')]");
-    private By catalogueButton = By.xpath("//*[@id=\"container\"]/div/div/header/div[2]/div/nav/ul[1]/li[1]/a[2]");
-    private By searchField = By.xpath("//input[@class='fast-search__input']");
-    private By resultWrapper = By.xpath("//a[text()='Смартфон Samsung Galaxy A52 SM-A525F/DS 4GB/128GB (черный)']");
-    private By mainLogo = By.xpath("//img[@class='onliner_logo']");
-    private By signUp = By.xpath("//a[contains(text(),'Зарегистрироваться')]");
+    private final By logInButton = By.xpath("//div[@class='auth-bar__item auth-bar__item--text']");
+    private final By headingLogIn = By.xpath("//div[@class='auth-form__title auth-form__title_big auth-form__title_condensed-default']");
+    private final By cartButton = By.xpath("//a[@title='Корзина']");
+    private final By logInButtonGreen = By.xpath("//button[@class='auth-button auth-button_primary auth-button_middle auth-form__button auth-form__button_width_full']");
+    private final By usernameField = By.xpath("//input[@placeholder='Ник или e-mail']");
+    private final By passwordField = By.xpath("//input[@placeholder='Пароль']");
+    private final By errorUsername = By.xpath("//div[contains(text(),'Укажите ник')]");
+    private final By errorPassword = By.xpath("//div[contains(text(),'Укажите пароль')]");
+    private final By errorWrongCreds = By.xpath("//div[contains(text(),'Неверный логин')]");
+    private final By catalogueButton = By.xpath("//*[@id=\"container\"]/div/div/header/div[2]/div/nav/ul[1]/li[1]/a[2]");
+    private final By searchField = By.xpath("//input[@class='fast-search__input']");
+    private final By resultWrapper = By.xpath("//a[text()='Смартфон Samsung Galaxy A52 SM-A525F/DS 4GB/128GB (черный)']");
+    private final By mainLogo = By.xpath("//img[@class='onliner_logo']");
+    private final By signUp = By.xpath("//a[contains(text(),'Зарегистрироваться')]");
 
 
     public MainPage logInClick() {
